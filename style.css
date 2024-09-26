@@ -1,0 +1,97 @@
+/* General styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    background-color: #fcf5e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Roulette table */
+.roulette-table {
+    margin-bottom: 20px;
+}
+
+/* Zero number styling */
+.number-zero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.number-zero .number-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/* Number row styling */
+.number-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.number-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin: 2px;
+}
+
+.number-btn.red {
+    background-color: #d9534f;
+    color: white;
+}
+
+.number-btn.black {
+    background-color: #292b2c;
+    color: white;
+}
+
+.number-btn.green {
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Controls styling */
+.controls {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #007bff; /* Blue background */
+    border-radius: 5px;
+}
+
+.section-select input {
+    width: 60px;
+    padding: 5px;
+}
+.section-select {
+    margin-bottom: 15px; /* Space between section select and buttons */
+}
+
+.section-select label {
+    margin-right: 10px;
+}

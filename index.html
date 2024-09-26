@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette Prediction Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="roulette-table">
+            <!-- Centered Zero -->
+            <div class="number-zero">
+                <button class="number-btn green">0</button>
+            </div>
+
+            <!-- Number rows -->
+            <div class="number-row">
+                <button class="number-btn red">3</button>
+                <button class="number-btn black">6</button>
+                <button class="number-btn red">9</button>
+                <button class="number-btn red">12</button>
+                <button class="number-btn black">15</button>
+                <button class="number-btn red">18</button>
+                <button class="number-btn red">21</button>
+                <button class="number-btn black">24</button>
+                <button class="number-btn red">27</button>
+                <button class="number-btn red">30</button>
+                <button class="number-btn black">33</button>
+                <button class="number-btn red">36</button>
+            </div>
+            <div class="number-row">
+                <button class="number-btn black">2</button>
+                <button class="number-btn red">5</button>
+                <button class="number-btn black">8</button>
+                <button class="number-btn black">11</button>
+                <button class="number-btn red">14</button>
+                <button class="number-btn black">17</button>
+                <button class="number-btn black">20</button>
+                <button class="number-btn red">23</button>
+                <button class="number-btn black">26</button>
+                <button class="number-btn black">29</button>
+                <button class="number-btn red">32</button>
+                <button class="number-btn black">35</button>
+            </div>
+            <div class="number-row">
+                <button class="number-btn red">1</button>
+                <button class="number-btn black">4</button>
+                <button class="number-btn red">7</button>
+                <button class="number-btn black">10</button>
+                <button class="number-btn black">13</button>
+                <button class="number-btn red">16</button>
+                <button class="number-btn red">19</button>
+                <button class="number-btn black">22</button>
+                <button class="number-btn red">25</button>
+                <button class="number-btn black">28</button>
+                <button class="number-btn black">31</button>
+                <button class="number-btn red">34</button>
+            </div>
+        </div>
+
+        <!-- Controls placed below the roulette wheel -->
+        <div class="controls">
+            <div>
+                <p>Last 15 Numbers: <span id="last-numbers">None</span></p>
+                <p>Number of Spins Entered: <span id="spin-count">0</span></p>
+                <p>Optimal Section: <span id="optimal-section">N/A</span></p>
+                <p>Center Number: <span id="center-number">N/A</span></p>
+                <p>Probability: <span id="probability">N/A</span></p>
+                <p>Bias Count: <span id="bias-count">0</span></p>
+                <p>Safe to Bet: <span id="safe-bet">N/A</span></p>
+            </div>
+
+            <div class="section-select">
+                <label for="section-select">Select Section Size: </label>
+                <input type="number" id="section-select" value="17" min="1" max="37">
+            </div>
+
+            <div class="buttons">
+                <button id="clear-all">Clear All</button>
+                <button id="delete-last">Delete Last</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
